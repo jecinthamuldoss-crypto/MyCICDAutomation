@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="1" failed="1" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-02-01T06:15:37 GMT" name="Suite" finished-at="2026-02-01T06:16:28 GMT" duration-ms="51140">
+    <groups>
+      <group name="Mypurchaseflow">
+        <method signature="SubmitOrder.submitorder(java.util.HashMap)[pri:0, instance:JesssfinalCompany.MyappFrameworks.SubmitOrder@20d28811]" name="submitorder" class="JesssfinalCompany.MyappFrameworks.SubmitOrder"/>
+      </group> <!-- Mypurchaseflow -->
+    </groups>
+    <test started-at="2026-02-01T06:15:37 GMT" name="SubmitOrderScenario" finished-at="2026-02-01T06:16:28 GMT" duration-ms="51140">
+      <class name="JesssfinalCompany.MyappFrameworks.SubmitOrder">
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:JesssfinalCompany.MyappFrameworks.SubmitOrder@20d28811]" started-at="2026-02-01T06:15:37 GMT" name="launchapplication" finished-at="2026-02-01T06:15:45 GMT" duration-ms="7815" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapplication -->
+        <test-method signature="submitorder(java.util.HashMap)[pri:0, instance:JesssfinalCompany.MyappFrameworks.SubmitOrder@20d28811]" started-at="2026-02-01T06:15:45 GMT" name="submitorder" data-provider="getData" finished-at="2026-02-01T06:16:08 GMT" duration-ms="22753" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Jecintha@19, email=jecinthamuldoss@gmail.com, MYProduct=ZARA COAT 3}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.cssSelector: section[class*= 'ng-star-inserted'] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.2', java.version: '25.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.110, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: /var/folders/h4/4w9tmjf16cs...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60612}, goog:processID: 2516, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:60612/devtoo..., se:cdpVersion: 144.0.7559.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 338004158cd24a0f393c7aee755aae32]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: section[class*= 'ng-star-inserted'] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.2', java.version: '25.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.110, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: /var/folders/h4/4w9tmjf16cs...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60612}, goog:processID: 2516, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:60612/devtoo..., se:cdpVersion: 144.0.7559.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 338004158cd24a0f393c7aee755aae32
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at JesssfinalCompany.AbstractComponents.Abstractfile.waituntilvisibile(Abstractfile.java:33)
+at JesssfinalCompany.MyappFrameworks.Paymentpage.paymentpageDetails(Paymentpage.java:40)
+at JesssfinalCompany.MyappFrameworks.SubmitOrder.submitorder(SubmitOrder.java:59)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+at java.base/java.lang.Thread.run(Thread.java:1474)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitorder -->
+        <test-method is-config="true" signature="closemyapp()[pri:0, instance:JesssfinalCompany.MyappFrameworks.SubmitOrder@20d28811]" started-at="2026-02-01T06:16:08 GMT" name="closemyapp" finished-at="2026-02-01T06:16:08 GMT" duration-ms="169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closemyapp -->
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:JesssfinalCompany.MyappFrameworks.SubmitOrder@20d28811]" started-at="2026-02-01T06:16:08 GMT" name="launchapplication" finished-at="2026-02-01T06:16:12 GMT" duration-ms="3953" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapplication -->
+        <test-method signature="submitorder(java.util.HashMap)[pri:0, instance:JesssfinalCompany.MyappFrameworks.SubmitOrder@20d28811]" started-at="2026-02-01T06:16:12 GMT" name="submitorder" data-provider="getData" finished-at="2026-02-01T06:16:28 GMT" duration-ms="16174" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=MyPassword@19, email=dossjc19@gmail.com, MYProduct=ADIDAS ORIGINAL}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitorder -->
+        <test-method is-config="true" signature="closemyapp()[pri:0, instance:JesssfinalCompany.MyappFrameworks.SubmitOrder@20d28811]" started-at="2026-02-01T06:16:28 GMT" name="closemyapp" finished-at="2026-02-01T06:16:28 GMT" duration-ms="143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closemyapp -->
+        <test-method signature="OrderHistoryValidation()[pri:0, instance:JesssfinalCompany.MyappFrameworks.SubmitOrder@20d28811]" started-at="2026-02-01T06:16:28 GMT" name="OrderHistoryValidation" finished-at="2026-02-01T06:16:28 GMT" depends-on-methods="JesssfinalCompany.MyappFrameworks.SubmitOrder.submitorder" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method JesssfinalCompany.MyappFrameworks.SubmitOrder.OrderHistoryValidation() on instance JesssfinalCompany.MyappFrameworks.SubmitOrder@20d28811 depends on not successfully finished methods 
+[JesssfinalCompany.MyappFrameworks.SubmitOrder.submitorder() on instance JesssfinalCompany.MyappFrameworks.SubmitOrder@20d28811]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method JesssfinalCompany.MyappFrameworks.SubmitOrder.OrderHistoryValidation() on instance JesssfinalCompany.MyappFrameworks.SubmitOrder@20d28811 depends on not successfully finished methods 
+[JesssfinalCompany.MyappFrameworks.SubmitOrder.submitorder() on instance JesssfinalCompany.MyappFrameworks.SubmitOrder@20d28811]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+at java.base/java.lang.Thread.run(Thread.java:1474)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrderHistoryValidation -->
+      </class> <!-- JesssfinalCompany.MyappFrameworks.SubmitOrder -->
+    </test> <!-- SubmitOrderScenario -->
+  </suite> <!-- Suite -->
+</testng-results>

@@ -35,7 +35,7 @@ public class SubmitOrder extends basetest {
 	public void submitorder(HashMap <String,String> input) throws IOException  {
 		// TODO Auto-generated method stub
 		
-		
+		//just checking the connectionn
 		
 		//landing page
 		ProductCataloguepage productpage = landing.landingpageactions(input.get("email"), input.get("password"));
